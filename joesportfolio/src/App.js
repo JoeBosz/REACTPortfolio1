@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import Footer from "./components/Footer";
 import Bio from "./components/Bio";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
@@ -16,6 +17,9 @@ const [page, setPage] = useState('Home');
   }
   if (page === 'Projects') {
     return <Projects />
+  }
+  if (page === 'Contact') {
+    return <Contact />
   }
 }
   return (

@@ -23,6 +23,11 @@ export default function NavBar({ setPage }) {
             Projects
           </a>
         </li>
+        <li>
+          <a href="#Contact" onClick={() => setPage("Contact")}>
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );
