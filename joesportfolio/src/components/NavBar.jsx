@@ -3,7 +3,7 @@
 export default function NavBar({ setPage }) {
   return (
     <nav>
-      <ul className="mt-5 flex flex-row justify-center gap-5 uppercase">
+      <ul >
       
         <li>
           <a href="#Home" onClick={() => setPage("Home")}>
