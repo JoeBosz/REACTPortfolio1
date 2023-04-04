@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
-
 export default function App () {
 const [page, setPage] = useState('Home');
  const displayPage = () => {

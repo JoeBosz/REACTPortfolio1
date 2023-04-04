@@ -3,7 +3,7 @@ import React from 'react'
 export default function projects() {
     return (
       <main >
-      <p>
+      <p className="">
       Night Out: This was my first experience in working hands on with a group where we were given a critera and told to try out best with our newly found skills. It was a nice experience with a nice group. It definitley a eye opening experience on how to work togeher as a team.
       </p>
 
