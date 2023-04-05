@@ -5,28 +5,31 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
-export default function App () {
-const [page, setPage] = useState('Home');
- const displayPage = () => {
-  if (page === 'Home') {
-    return <Home />
-  }
-  if (page === 'Bio') {
-    return <Bio />
-  }
-  if (page === 'Projects') {
-    return <Projects />
-  }
-  if (page === 'Contact') {
-    return <Contact />
-  }
-}
+
+
+export default function App() {
+  const [page, setPage] = useState("Home");
+  const displayPage = () => {
+    if (page === "Home") {
+      return <Home />;
+    }
+    if (page === "Bio") {
+      return <Bio />;
+    }
+    if (page === "Projects") {
+      return <Projects />;
+    }
+    if (page === "Contact") {
+      return <Contact />;
+    }
+  };
+  <div>
+  </div>;
   return (
     <div>
       <NavBar setPage={setPage} />
-      {displayPage ()}
+      {displayPage()}
       {/* <Footer /> */}
     </div>
   );
-
 }

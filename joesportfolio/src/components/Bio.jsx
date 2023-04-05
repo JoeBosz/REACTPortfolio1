@@ -1,9 +1,10 @@
 import React from "react";
+import me from "../images/selfie.jpg";
 
 export default function Bio() {
   return (
     <main>
-      <p className="mt-9 flex flex-col items-center gap-5">
+      <p className=" text-center ">
         Hi my name is Joe, When I was a young boy I like to play minecraft and
         that sparked and interest in computers. I never really thoughy about
         builiding them let alone ever learning how to code on one. Till one day
@@ -14,6 +15,13 @@ export default function Bio() {
         sometimes. I enjoy the satisfaction of solving a error or even just
         gettign a simple container to look nice. I've been enjoying what I
         learned.
+        < img 
+        className="rounded"
+        src={me}
+        alt=""
+        width="450"
+        height="181"
+      />
       </p>
       <figure></figure>
     </main>
