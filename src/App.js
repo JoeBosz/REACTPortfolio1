@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import Footer from "./components/Footer";
 import Bio from "./components/Bio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
@@ -31,7 +32,7 @@ export default function App() {
     <div>
       <NavBar setPage={setPage} />
       {displayPage()}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
