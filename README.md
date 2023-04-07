@@ -1,73 +1,70 @@
-# React-Tailwind-Vitest
+# Getting Started with Create React App
 
-This is a template for a React project using TailwindCSS and Vite/Vitest. It also includes `require('@tailwindcss/forms')` in the `tailwind.config.js` file.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Scripts
+## Available Scripts
 
-- `npm start` - Starts the development server.
-- `npm test` - Runs the test suite with [Vitest](https://vitest.dev/guide/cli.html#commands). React Testing Library is included along with `@testing-library/user-event`.
+In the project directory, you can run:
 
-See [package.json](./package.json) for more scripts
+### `npm start`
 
-## Linting and Prettier
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This project uses `"standard"` linting with the recommended for `react` and `"prettier"`. This includes recommendations for **rules of hooks** and **a11y.**
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-It also includes warnings regarding [encapsulating React hooks](https://www.npmjs.com/package/eslint-plugin-use-encapsulation).
+### `npm test`
 
-It also lints `"testing-library"` and `"jest-dom"`.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## VS Code Extensions and Settings
+### `npm run build`
 
-It also includes sensible VS Code defaults for [settings](./.vscode/settings.json) and [extensions](./.vscode/extensions.json).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-For the **settings**, we are doing things like:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `"css.validate": false,` - TailwindCSS uses a lot of custom CSS syntax that VS Code doesn't understand, so we disable validation.
-- `"editor.formatOnSave": true,` - We want to format our code on save.
-- `"editor.defaultFormatter": "esbenp.prettier-vscode",` - We want to use Prettier to format our code.
-- `"editor.codeActionsOnSave": { "source.fixAll.eslint": true },` - We want to use ESLint to fix any linting errors on save.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-You should install the recommended extensions when you open the project in VS Code to get the full benefit of these settings.
-.
+### `npm run eject`
 
-## Architecture
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-This project uses the following architecture heavily inspired by Tania Rascia's [React Architecture](https://www.taniarascia.com/react-architecture-directory-structure/).
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- `src/` - All of our source code.
-  - `components/` - All of our React components (`.jsx`). Global shared/reusable components, such as layout (wrappers, navigation), form components, buttons.
-  - `layouts/` - These are components that are meant to wrap other smaller components as part of a **route**. They will usually receive `children`, or might just be `header`, `footer`, `main`, etc.
-  - `hooks/` - All of our custom React hooks (`.js`).
-  - `routes/` - All of our React routes (`.jsx`). Each route is a 'page'.
-  - `services/` - All of our services (`.js`). Services are responsible for making API calls and returning data, for example (api.js). Or, maybe you have a service that is responsible for managing authentication (auth.js). Or, `localStorage` (storage.js). The stuff in here has consequences, that is, **side effects**.
-  - `tests/` - All of our tests (`.test.jsx`).
-  - `utils/` - All of our utility functions (`.js`). Utilities, helpers, constants, and the like. Unlike `services`, these are not responsible for side effects.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Absolute Imports
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-This project uses absolute imports for all of our files. This means that we can import files from any directory using the `@` prefix instead of relative paths (e.g. `import Button from '@/components/Button'` instead of `import Button from '../../components/Button'`).
+## Learn More
 
-This works for any of the directories in `src/` as listed above. If you need to add more, see [`vite.config.js`](./vite.config.js).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Dependency Graph
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-`npm run dep-graph`
+### Code Splitting
 
-This project includes `"dependency-cruiser"`. You can generate a dependency graph by running `npm run dep-graph`. This will be in SVG format by default. You can change this in the `package.json` file.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-**Note:** You **must** have [Graphviz](https://graphviz.org/download/) installed for this to work. You can install it using [Homebrew](https://brew.sh/) on macOS with `brew install graphviz`.
+### Analyzing the Bundle Size
 
-Here's an example of what the dependency graph looks like:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-![Dependency Graph](./dependency-graph.svg)
+### Making a Progressive Web App
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-[MIT](./LICENSE)
+### Advanced Configuration
 
-## Credits
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-This project was bootstrapped with [create-vite](https://vitejs.dev/guide/).
+### Deployment
 
-Like it? Give it a ⭐️ on [GitHub](https://github.com/manavm1990/vite-react-tailwind-vitest).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
