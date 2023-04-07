@@ -3,7 +3,7 @@ export default function Resume() {
     <main className="flex flex-col items-center justify-center">
       <a
         className="rounded-lg bg-lightpink px-5 text-center"
-        href="https://docs.google.com/document/d/1vodTwuyGRayJlsegbbpd_G_K_GWYQBX2wptynW6PhJk/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1x9wAMujplX6TOqmdrfLelwsrKJqvMeWgWoBcXPg_6fo/edit?usp=sharing"
         download
       >
         Download Resume
