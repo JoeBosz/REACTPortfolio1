@@ -28,6 +28,11 @@ export default function NavBar({ setPage }) {
             Contact
           </a>
         </li>
+        <li>
+          <a href="#Resume" onClick={() => setPage("Resume")}>
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   );

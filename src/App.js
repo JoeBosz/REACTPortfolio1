@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
-
+import Resume from "./components/Resume";
 
 export default function App() {
   const [page, setPage] = useState("Home");
@@ -22,9 +22,11 @@ export default function App() {
     if (page === "Contact") {
       return <Contact />;
     }
+    if (page === "Resume") {
+      return <Resume />;
+    }
   };
-  <div>
-  </div>;
+  <div></div>;
   return (
     <div>
       <NavBar setPage={setPage} />
