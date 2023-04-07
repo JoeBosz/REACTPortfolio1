@@ -33,11 +33,6 @@ export default function NavBar({ setPage }) {
             Resume
           </a>
         </li>
-        <li>
-          <a href="#Footer" onClick={() => setPage("Footer")}>
-            Footer
-          </a>
-        </li>
       </ul>
     </nav>
   );
